@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+.dashboard {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header row: title left, refresh button right, wraps cleanly on narrow screens */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+#refresh-btn {
+    padding: 6px 18px;
+    font-size: 14px;
+    border: 1px solid #3b82d4;
+    border-radius: 6px;
+    background-color: white;
+    color: #3b82d4;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#refresh-btn:hover {
+    background-color: #eff6ff;
+}
+
+.dashboard > p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Situation Summary banner */
+#situation-summary {
+    background-color: white;
+    border-left: 4px solid #3b82d4;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+#situation-summary-text {
+    margin: 0;
+    font-style: italic;
+    color: #1f2328;
+    font-size: 14px;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: calc(33.333% - 20px);
+    margin: 1%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card > p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.card div p {
+    font-size: 14px;
+    text-align: left;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #f4f6f8;
+    border-radius: 6px;
+}
+
+/* Temperature severity colour-coding — !important overrides .card div p specificity */
+.severity-severe {
+    background-color: #fde8e8 !important;
+}
+
+.severity-moderate {
+    background-color: #fff4e0 !important;
+}
+
+/* Recommendations section */
+.recommendations-section {
+    margin-top: 20px;
+}
+
+.recommendations-section h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.recommendation-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 18px 22px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Inline section error message */
+.section-error {
+    font-size: 14px;
+    color: #b91c1c;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #fde8e8;
+    border-radius: 6px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+
+    .card {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .dashboard {
+        padding: 25px 15px;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+}

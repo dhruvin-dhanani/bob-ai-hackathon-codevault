@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Disruption Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="header">
+            <h1>Supply Chain Disruption Assistant</h1>
+            <button id="refresh-btn">Refresh</button>
+        </div>
+
+        <p>
+            Monitor disrupted shipments, idle fleet, and cold-chain risks.
+        </p>
+
+        <div id="situation-summary">
+            <p id="situation-summary-text">Loading situation summary...</p>
+        </div>
+
+        <div class="card">
+            <h2>Affected Shipments</h2>
+            <p id="affected-count">0</p>
+            <div id="affected-list"></div>
+        </div>
+        <div class="card">
+            <h2>Idle Fleet</h2>
+            <p id="idle-count">0</p>
+            <div id="idle-list"></div>
+        </div>
+        <div class="card">
+            <h2>Temperature Excursions</h2>
+            <p id="temperature-count">0</p>
+            <div id="temperature-list"></div>
+        </div>
+        <div class="recommendations-section">
+            <h2>Recommended Actions</h2>
+            <div id="recommendations-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
