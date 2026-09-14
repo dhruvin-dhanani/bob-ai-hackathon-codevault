@@ -251,7 +251,7 @@ The recommendations consider factors such as vehicle capacity, vehicle availabil
 | 🖼️ Screenshots | `demo/screenshots/`        |
 | 📊 Presentation | `presentation/`            |
 
-Demo artifacts will be completed before final submission.
+Demo screenshots are available in `demo/screenshots/`. The project is not currently deployed and can be run locally using `docs/setup-guide.md`.
 
 ---
 
